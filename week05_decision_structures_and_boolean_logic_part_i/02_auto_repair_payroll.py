@@ -8,6 +8,8 @@ def main():
     hours = float(input('Enter the number of hours worked: '))
     pay_rate = float(input('Enter the hourly pay rate: '))
     
+    overtime_pay = 0.0
+    
     # Calculate and display the gross pay.
     if hours > BASE_HOURS:
         # Calculate the gross pay with overtime.
@@ -16,15 +18,18 @@ def main():
 
         # Calculate the amount of overtime pay.
         overtime_pay = overtime_hours * pay_rate * OT_MULTIPLIER
-
+        
         # Calculate the gross pay.
-        gross_pay = BASE_HOURS * pay_rate + overtime_pay
+        gross_pay = BASE_HOURS * pay_rate + overtime_pay   
     else:
         # Calculate the gross pay without overtime.
         gross_pay = hours * pay_rate
         
+   
     # Display the gross pay.    
-    print(f'The gross pay is ${gross_pay:,.2f}.')    
-
+    
+    print(f'The gross pay is ${gross_pay:,.2f}.')  
+    print(f'Overtime Pay: {overtime_pay}')    
+    
 if __name__ == '__main__':
     main()

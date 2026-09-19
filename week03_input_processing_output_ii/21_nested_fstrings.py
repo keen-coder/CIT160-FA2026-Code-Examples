@@ -1,5 +1,7 @@
 price = 24.8487646
 
+print(f'Price:{'$'+str(price):>24.2f}')
+
 # We want to format the value to two decimal places
 # And also format the width. This is a special case where
 # we want the '$' to be next to the price. Since price

@@ -38,7 +38,7 @@ def main():
     print(f'|{name6:<20}|')
 
     print('\nCENTER ALIGN--------------------------')
-    print(f'|{name1:-^20}|')
+    print(f'|{name1:^20}|')
     print(f'|{name2:-^20}|')
     print(f'|{name3:-^20}|')
     print(f'|{name4:-^20}|')
